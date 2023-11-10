@@ -1,49 +1,58 @@
 // Destructuring an Array
-let names = ["Adebayor", "Olubisi", "Ogunbiyi"]
+ // let names = ["Adebayor", "Olubisi", "Ogunbiyi"]
 
-let [firstName, middleName] = names
+ // let [firstName, middleName, name3] = names
 
-console.log(firstName);
-console.log(middleName);
+//  console.log(firstName);
+//  console.log(middleName);
+//  console.log(name3);
 
-// Get the first name
-let [name1] = names
-console.log(name1) // Adebayor
+ //destructuring an Array with Destructuring methods.
 
-// Get the middle name
-let [, name2] = names
-console.log(name2) // Olubisi
+// // Get the first name
+//  let [ , , name3] = names
+//  console.log(name3) // Adebayor
 
-// Get the last name
-let [, , name3] = names
-console.log(name3) // Ogunbiyi
+// // Get the middle name
+// let [, name2] = names
+// console.log(name2) // Olubisi
 
-// Use the rest operator to get the rest of the names
-let [name4, ...restOfNames] = names
-console.log(name4) // Adebayor
-console.log(restOfNames) // ["Olubisi", "Ogunbiyi"]
+// // Get the last name
+// let [, , name3] = names
+// console.log(name3) // Ogunbiyi
+
+// // Use the rest operator to get the rest of the names
+// let [name4, ...restOfNames] = names
+// console.log(name4) // Adebayor
+// console.log(restOfNames) // ["Olubisi", "Ogunbiyi"]
+
+// let [name1, ...restOfNames] = names
+// console.log(names) //
 
 
 
-// Destructuring an Object
+// // Destructuring an Object
 let settings = { theme: "dark", fontSize: 20, fullScreen: true }
-let { theme, fontSize, fullScreen } = settings
+// let { theme, fontSize, fullScreen } = settings
 
-console.log(theme);
-console.log(fontSize);
+//console.log(theme);
+// console.log(fontSize);
 
-// Get only the theme, and assign it to a new variable
-let { theme: newTheme } = settings
-console.log(newTheme);
+// // Get only the theme, and assign it to a new variable
+// let {theme: myTheme} = settings
+//  let { theme: newTheme } = settings
 
-// Use the rest operator to get the rest of the settings
-let { theme: newTheme1, ...restOfSettings } = settings
-console.log(newTheme1) // dark
-console.log(restOfSettings) // { fontSize: 20, fullScreen: true }
+//  console.log(myTheme)
+//  console.log(newTheme);
+
+// // // Use the rest operator to get the rest of the settings
+// let { theme: newTheme1, ...restOfSettings } = settings
+// console.log(newTheme1) // dark
+// console.log(restOfSettings) // { fontSize: 20, fullScreen: true }
 
 
 
-// Destructuring in a function
+// // Destructuring in a function
 function getUserInfo({ name, age }) {
     console.log("My name is:", name)
     console.log("My age is:" , age)

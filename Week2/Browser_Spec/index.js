@@ -8,7 +8,7 @@ function sayHello() {
 window.sayHello(); //This works
 sayHello() // This works as well
 
-
+// the Dom..
 // We can access Browser specific functions as well (BOM)
 alert(window.innerHeight); // inner window height
 alert(window.innerWidth); // inner window width
