@@ -8,6 +8,7 @@ document.querySelectorAll('input').forEach((input) => {
     });
 })
 
+
 // On submit of form, alert "You submitted the form!"
 document.querySelector('#form1').addEventListener('submit', (e) => {
     e.preventDefault();
