@@ -18,6 +18,7 @@ function getData(url, success, error) {
     };
 }
 
+
 function success(result) {
     console.log("Success!");
     console.log(result);

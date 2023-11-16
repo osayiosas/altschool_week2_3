@@ -17,6 +17,7 @@ function getData(url) {
 
         };
     });
+    
 }
 
 const url = prompt("Enter a URL");
