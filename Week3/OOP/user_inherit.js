@@ -45,6 +45,15 @@ class User {
 
 }
 
+class AdminUser extends User {
+    constructor(firstName, lastName, email, password, userType, adminNumber) {
+        this.userType = "Admin";
+        this.adminNumber = adminNumber || "N/A";
+}
+getadminNumber() {
+    return this.adminNumber;
+}
+}
 
 class Student extends User {
     constructor(firstName, lastName, email, password, studentNumber, studentClass, subjects) {
@@ -81,7 +90,6 @@ class Student extends User {
     }
 
 }
-
 
 // Create some students
 const student1 = new Student("Obinna", "chikeobinna@mail.com", "mysimplepassword", 123, 1, ["English", "Mathematics"]);

@@ -1,5 +1,7 @@
 
-//A class with constructor
+// A class with constructor
+
+
 class MathHelper {
 
     constructor(num1, num2) {
@@ -51,7 +53,7 @@ console.log(mathHelper1.power());
 
 
 // Create another instance from the class
-const mathHelper2 = new MathHelper(10, 20);
+const mathHelper2 = new MathHelper(40, 80);
 
 console.log(mathHelper2.add());
 console.log(mathHelper2.subtract());
